@@ -2,7 +2,7 @@ export const CATALOG = [
 
   {
     id: 'el1',
-    brand: 'audi',
+    brand: 'Audi',
     model: 'Q7',
     img: 'https://i.ibb.co/wLH7mD1/audi-q7.png"',
     price: 20000,
@@ -51,7 +51,7 @@ export const CATALOG = [
   {
     id: 'el7',
     brand: 'Audi',
-    model: 'b-group',
+    model: 'B-group',
     img: 'https://i.ibb.co/bBzLgMt/audi-b-group.png',
     price: 40000,
   },
@@ -75,7 +75,7 @@ export const CATALOG = [
   {
     id: 'el10',
     brand: 'Toyota',
-    model: 'prius',
+    model: 'Prius',
     img: 'https://i.ibb.co/nkr3rnT/nuclear-prius.png',
     price: 9500,
   },
@@ -91,7 +91,7 @@ export const CATALOG = [
   {
     id: 'el12',
     brand: 'Dodge',
-    model: 'rep-Viper',
+    model: 'Rep-Viper',
     img: 'https://i.ibb.co/2M2Xc2j/viper-reptile.png',
     price: 35000,
   },

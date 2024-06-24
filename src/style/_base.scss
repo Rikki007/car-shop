@@ -1,4 +1,68 @@
-body {
+* {
   box-sizing: border-box;
-  font-family: 'Roboto';
 }
+
+body {
+  font-family: 'Roboto';
+  background-color: $background;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+// style product strt
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: $spacing-large;
+}
+
+.product-item {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: $spacing-medium;
+  align-items: center;
+  box-shadow: 
+    0 16px 24px 2px rgba(0, 0, 0, 0.02),
+    0 6px 30px 5px rgba(0, 0, 0, 0.04),
+    0 8px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius;
+  background-color: $back-card;;
+
+  .product-item__brand {
+    font-size: $font-big;
+  }
+
+  .product-item__model {
+    font-size: $font-medium;
+  }
+
+  .product-item__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .product-item__price {
+    display: block;
+    text-align: center;
+    font-size: $font-small;
+  }
+
+  .product-item__btn {
+    @include button()
+  }
+
+  .product-item__btn_active {
+    @include button($back-color: $color-active)
+  }
+
+}
+// style product end
+
+
+
+

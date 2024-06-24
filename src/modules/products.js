@@ -9,12 +9,12 @@ class Products {
     CATALOG.forEach(({ id, brand, model, img, price, }) => {
       
       htmlCatalog += `
-        <li>
-          <span>${brand}</span>
-          <span>${model}</span>
-          <img src="${img}" alt="picture">
-          <span>${price}</span>
-          <button>Add to bascet</button>
+        <li class="product-item">
+          <h3 class="product-item__brand">${brand}</h3>
+          <h3 class="product-item__model">${model}</h3>
+          <img class="product-item__img"src="${img}" alt="picture">
+          <span class="product-item__price">💲 ${price.toLocaleString()} BYN</span>
+          <button class="product-item__btn">Add to bascet</button>
 
         </li>
 
@@ -24,7 +24,7 @@ class Products {
 
     const html = `
       
-        <ul>
+        <ul class="product-container">
 
           ${htmlCatalog}
     
