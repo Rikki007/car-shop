@@ -3,7 +3,6 @@ import { ROOT_PRODUCTS } from './root.js';
 
 class Products {
   render() {
-
     let htmlCatalog = '';
 
     CATALOG.forEach(({ id, brand, model, img, price, }) => {
