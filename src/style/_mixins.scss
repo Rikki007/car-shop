@@ -1,4 +1,4 @@
-@mixin button($back-color: $color) {
+@mixin button($back-color: $color, $back-color-hover: $color-hover) {
   padding: $spacing-small $spacing-medium;
   border-radius: $border-radius;
   border: transparent;
@@ -10,7 +10,7 @@
   font-size: inherit;
 
   &:hover {
-    background-color: $color-hover;
+    background-color: $back-color-hover;
   }
 
 }

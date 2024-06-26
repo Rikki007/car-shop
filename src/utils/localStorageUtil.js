@@ -1,4 +1,4 @@
-class LocaleStorageUtil {
+export class LocaleStorageUtil {
   constructor() {
     this.keyName = 'products';
   }
@@ -26,9 +26,9 @@ class LocaleStorageUtil {
     
     localStorage.setItem(this.keyName, JSON.stringify(products));
 
-    return { isPushProduct, products }
+    return { isPushProduct, products };
   }
 }
 
-const lsu = new LocaleStorageUtil();
+export const lsu = new LocaleStorageUtil();
 

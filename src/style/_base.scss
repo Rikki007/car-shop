@@ -57,7 +57,7 @@ h3 {
   }
 
   .product-item__btn_active {
-    @include button($back-color: $color-active)
+    @include button($back-color: $color-remove, $back-color-hover: $color-remove-hover)
   }
 
 }

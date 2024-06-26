@@ -7,8 +7,9 @@ $spacing-medium: 1rem;
 $spacing-large: 2rem;
 
 $color: rgb(143, 252, 0);
-$color-hover:rgba(3, 249, 3, 0.865);
-$color-active: darken(rgb(3, 249, 3), 10%);
+$color-hover:darken(rgb(143, 252, 0), 10%);
+$color-remove: rgb(232, 195, 30);
+$color-remove-hover: darken(rgb(232, 195, 30), 10%);
 $background: rgb(240, 239, 255);
 $back-card: rgba(240, 229, 142, 0.356);
 
