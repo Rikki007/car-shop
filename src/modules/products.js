@@ -1,6 +1,8 @@
 import { CATALOG } from './catalog.js';
 import { ROOT_PRODUCTS } from './root.js';
 import { LocaleStorageUtil, lsu } from '../utils/localStorageUtil.js';
+import { Header, headerPage } from './header.js';
+
 
 class Products {
 
@@ -22,6 +24,8 @@ class Products {
       elem.classList.remove(this.classNameActive);
       elem.innerHTML = this.labelAdd;
     }
+
+    headerPage.render(products.length);
 
   }
 

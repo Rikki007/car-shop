@@ -7,10 +7,51 @@ body {
   background-color: $background;
 }
 
+h1 {
+  margin: 0;
+}
+
 h3 {
   margin: 0;
 }
 
+// header strt
+.header {
+  margin: 0 auto;
+  background-color: $color-head-back;
+}
+
+.header-container {
+  padding: $spacing-medium $spacing-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+
+  display: flex;
+  align-items: center;
+
+  .header-logo__pic {
+    width: 8rem;
+    height: 8rem;
+    background-image: url(./img/logo.svg);
+    background-size: cover;
+  }
+
+  .header-logo__title {
+    font-size: $font-big;
+  }
+
+}
+
+.counter {
+  font-size: $font-medium;
+  font-weight: 700;
+}
+
+// header end
 
 // style product strt
 .product-container {
@@ -20,6 +61,8 @@ h3 {
 }
 
 .product-item {
+
+  font-style: italic;
   padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
