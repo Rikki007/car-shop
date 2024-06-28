@@ -5,8 +5,12 @@ class Footer {
     const html = `
       <div class="footer-container">
         <div class="contacts">
-          <a href="https://github.com/Rikki007" class="contacts__link">Kirill Oreshkevich</a>
-          <div class="contacts__img"></div>
+        
+          <a href="https://github.com/Rikki007" class="contacts__link">
+            Kirill Oreshkevich
+            <div class="contacts__img"></div>
+          </a>
+          
         </div>
       </div>
     `;
