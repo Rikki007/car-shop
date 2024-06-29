@@ -1,7 +1,12 @@
 import { ROOT_HEADER } from "./root";
 import { LocaleStorageUtil, lsu } from '../utils/localStorageUtil.js';
+import { Shopping, shoppingPage } from './shopping.js';
 
 export class Header {
+
+  handlerOpenShoppingPage() {
+    shoppingPage.render();
+  }
 
   render(count) {
 
@@ -18,6 +23,11 @@ export class Header {
     `;
 
     ROOT_HEADER.innerHTML = html;
+
+    const btn = document.querySelector('.counter');
+    btn.addEventListener('click', () => {
+      this.handlerOpenShoppingPage();
+    });
   }
 
 }

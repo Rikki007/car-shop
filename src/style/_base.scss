@@ -54,6 +54,7 @@ h3 {
 }
 
 .counter {
+  cursor: pointer;
   font-size: $font-medium;
   font-weight: 700;
 }
@@ -114,6 +115,44 @@ h3 {
 }
 
 // style product end
+
+// style shopping strt
+
+.shopping-container {
+
+  width: 97%;
+  height: 97%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  padding: $spacing-large;
+  background-color: $back-basket;
+
+  .shopping__close {
+    width: 2.3rem;
+    height: 2.3rem;
+    position: absolute;
+    top: $spacing-large;
+    right: $spacing-large;
+    background-image: url(./img/cross.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  
+}
+
+.shopping-element__brand {
+  @include shopping-element;
+}
+
+.shopping-element__model {
+  @include shopping-element;
+}
+
+// style shopping end
 
 // style footer strt
 
