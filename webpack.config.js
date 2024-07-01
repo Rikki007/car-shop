@@ -12,6 +12,9 @@ module.exports = {
   target,
   devtool,
   devServer: {
+    static: {
+      directory: path.join(__dirname, 'src'),
+    },
     open: true,
     hot: true,
   },

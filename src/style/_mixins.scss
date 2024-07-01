@@ -1,0 +1,21 @@
+@mixin button($back-color: $color, $back-color-hover: $color-hover) {
+  padding: $spacing-small $spacing-medium;
+  border-radius: $border-radius;
+  border: transparent;
+  background-color: $back-color;
+  transition: all 0.2s;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+
+  &:hover {
+    background-color: $back-color-hover;
+  }
+
+}
+
+@mixin shopping-element {
+  padding: $spacing-medium;
+  font-weight: 700;
+}
