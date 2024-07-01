@@ -19,5 +19,4 @@ class Footer {
   }
 }
 
-const footer = new Footer;
-footer.render();
+export const footer = new Footer;

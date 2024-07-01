@@ -1,8 +1,8 @@
 import { ROOT_SHOPPING } from "./root";
-import { LocaleStorageUtil, lsu } from '../utils/localStorageUtil.js';
-import { CATALOG } from './catalog.js';
+import { lsu } from '../utils/localStorageUtil.js';
+import { CATALOG } from '../index.js';
 
-export class Shopping {
+class Shopping {
 
   handleClear() {
     ROOT_SHOPPING.innerHTML = '';

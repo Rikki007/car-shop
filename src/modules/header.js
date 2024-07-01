@@ -1,6 +1,5 @@
 import { ROOT_HEADER } from "./root";
-import { LocaleStorageUtil, lsu } from '../utils/localStorageUtil.js';
-import { Shopping, shoppingPage } from './shopping.js';
+import { shoppingPage } from './shopping.js';
 
 export class Header {
 
@@ -33,6 +32,3 @@ export class Header {
 }
 
 export const headerPage = new Header;
-const countOfProducts = lsu.getProducts().length;
-
-headerPage.render(countOfProducts);

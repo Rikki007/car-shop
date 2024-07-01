@@ -154,6 +154,49 @@ h3 {
 
 // style shopping end
 
+// spinner strt
+
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .spinner__img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+// spinner end
+
+// error strt
+
+.error-container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+
+  .error-message {
+    padding: $spacing-medium $spacing-large;
+    text-align: center;
+    background-color: $back-error;
+  }
+
+}
+
+
+
+// error end
+
 // style footer strt
 
 .footer {

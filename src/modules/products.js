@@ -1,7 +1,7 @@
-import { CATALOG } from './catalog.js';
+import { CATALOG } from '../index.js';
 import { ROOT_PRODUCTS } from './root.js';
-import { LocaleStorageUtil, lsu } from '../utils/localStorageUtil.js';
-import { Header, headerPage } from './header.js';
+import { lsu } from '../utils/localStorageUtil.js';
+import { headerPage } from './header.js';
 
 
 class Products {
@@ -85,5 +85,4 @@ class Products {
   }
 }
 
-const prod = new Products;
-prod.render();
+export const prod = new Products;
