@@ -169,6 +169,9 @@ h3 {
   .spinner__img {
     width: 200px;
     height: 200px;
+    background-image: url(./img/spin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
 }

@@ -8,7 +8,7 @@ class Spinner {
   render() {
     const html = `
       <div class="spinner-container">
-        <img class="spinner__img" src="img/Spinner.svg">
+        <div class="spinner__img"></div>
       </div>
     `;
 
